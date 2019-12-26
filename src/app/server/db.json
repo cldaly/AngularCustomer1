@@ -5,24 +5,6 @@
       "name": "Clayton Daly",
       "address": "Los Angeles, CA",
       "country": "USA"
-    },
-    {
-      "id": 2,
-      "name": "Ruby Daly",
-      "address": "Miami, FL",
-      "country": "USA"
-    },
-    {
-      "id": 3,
-      "name": "Riley Daly",
-      "address": "San Diego, CA",
-      "country": "USA"
-    },
-    {
-      "id": 4,
-      "name": "Charlie Daly",
-      "address": "Atlanta, GA",
-      "country": "USA"
     }
   ]
 }
