@@ -1,0 +1,13 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.form-container > * {
+    width: 100%;
+}
+
+.form-container h4 {
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+<div class="main">
+
+  <h2 class="py-3 text-center">{{ title }}</h2>
+  <ul class="text-center list-inline py-3">
+    <li class="list-inline-item">
+      <a routerLink="/add"><button mat-raised-button color="primary">Add New Customer</button></a>
+    </li>
+    <li class="list-inline-item">
+      <a routerLink="/view"><button mat-raised-button color="primary">View All Customers</button></a>
+    </li>
+    <li class="list-inline-item">
+      <a routerLink="/search"><button mat-raised-button color="primary">Search Customers</button></a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="form-container">
+    <h4>Enter Customer Details</h4>
+    <mat-form-field>
+      <input [(ngModel)]="customer.name" matInput placeholder="Name" autocomplete="off" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input [(ngModel)]="customer.address" matInput placeholder="Address"  autocomplete="off" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input [(ngModel)]="customer.country" matInput placeholder="Country"  autocomplete="off" required>
+      </mat-form-field>
+  
+    <button (click)="addCustomer()" style="width: 35%; align-self: center;" mat-raised-button color="accent">Add Customer</button>
+  
+  </div>

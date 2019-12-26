@@ -1,0 +1,61 @@
+<div class="search-page">
+    <h4>Search Customers by ID</h4>
+    <div class="form-container">
+        <mat-form-field>
+            <input [disabled]="searching" [(ngModel)]="id" matInput placeholder="Enter Customer ID" autocomplete="off">
+        </mat-form-field>
+        <button [disabled]="searching" (click)="search()" style="width: 25%; align-self: center;" mat-raised-button color="accent">Search</button>
+    </div>
+    <mat-card *ngIf="customer">
+        <mat-card-header>
+            <mat-card-title>{{ customer.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <ul>
+                <li>Customer ID: {{ customer.id }}</li>
+                <li>Customer Address: {{ customer.address }}</li>
+                <li>Customer Country: {{ customer.country }}</li>
+            </ul>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="displayUpdate()" mat-stroked-button color="primary">Update</button>
+            <button (click)="delete()" mat-stroked-button color="warn">Delete</button>
+            <button (click)="close()" mat-stroked-button>Close</button>
+        </mat-card-actions>
+    </mat-card>
+    <div class="update-container" *ngIf="updating">
+        <div class="form-contailer">
+            <mat-form-field appearance="standard">
+                <mat-label>Customer Name</mat-label>
+                <input 
+                    [(ngModel)]="uCustomer.name" 
+                    matInput placeholder="Name" 
+                    autocomplete="off" 
+                    value="customer.name" 
+                required>
+            </mat-form-field>
+        
+            <mat-form-field appearance="standard">
+                <mat-label>Address</mat-label>
+                <input 
+                    [(ngModel)]="uCustomer.address" 
+                    matInput placeholder="Address"  
+                    autocomplete="off" 
+                    value="customer.address" 
+                required>
+            </mat-form-field>
+        
+            <mat-form-field appearance="standard">
+                <mat-label>Country</mat-label>
+                <input 
+                    [(ngModel)]="uCustomer.country" 
+                    matInput placeholder="Country"  
+                    autocomplete="off" 
+                    value="customer.country" 
+                required>
+            </mat-form-field>
+            
+        </div>
+        <button (click)="update()" style="width: 20%; align-self: center;" mat-raised-button color="accent">Update</button>
+    </div>
+</div>

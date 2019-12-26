@@ -1,0 +1,10 @@
+table {
+    width: 100%;
+}
+h4 {
+    text-align: center;
+}
+
+.customer-list {
+    min-width: 600px;
+}
